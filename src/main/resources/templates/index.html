@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>Home</div>
+    <div th:text="${name.toUpperCase()}"></div>
+    <div th:text="${age}"></div>
+    <div th:text="${gender}"></div>
+    <hr>
+    <div th:text="${user.toString()}"></div>
+    <hr>
+    <div th:each="name : ${names}">
+        <div th:text="${name}"></div>
+    </div>
+    <hr>
+    <div th:if="${user != null}" th:text="${user.name}"></div>
+    <div th:unless></div>
+</body>
+</html>
